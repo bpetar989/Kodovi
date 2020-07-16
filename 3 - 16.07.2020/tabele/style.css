@@ -1,0 +1,35 @@
+table{
+    width:100%;
+    text-align:left;
+    border-collapse: collapse;
+}
+
+tr, td, th{
+    border: solid 1px grey
+}
+
+td, th{
+    padding:5px;
+}
+
+.zuto{
+    background-color: yellow;
+}
+
+#prvaTabela tr:nth-child(odd){
+    font-style: italic;
+}
+
+#drugaTabela tr:nth-child(even):hover{
+    background-color: yellow;
+}
+
+#drugaTabela tr:nth-child(3n){
+    color:red;
+}
+
+#drugaTabela tr:nth-child(5){
+    color: red;
+}
+    
+
