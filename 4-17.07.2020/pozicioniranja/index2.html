@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            background-color: rgb(73, 175, 73);
+            width:150px;
+            margin:0;
+            float:left;
+        }
+        p:last-child{
+            float:right;
+        }
+        div {
+            overflow:hidden
+        }
+
+        nav{
+            overflow:hidden;
+            width:100%;
+            position:absolute;
+            top: 0;
+            left:0;
+            right:0;            
+        }
+
+        li {
+            background-color: rgb(124, 165, 165);
+            float:left;
+            width:25%;
+            height:30px;
+            border-style: solid;
+            border-width: 1px;
+            text-align: center;
+            padding-top: 4px;
+            box-sizing: border-box;
+        }
+
+        li:hover{
+            background-color: firebrick;
+        }
+
+        ul{
+            padding-left: 0;
+            list-style:none;
+            width:100%;
+            overflow:hidden;
+        }
+
+        #container{
+            vertical-align: bottom;
+        }
+    </style>
+</head>
+<body>
+    
+   <nav class="topbar">
+        <ul>
+            <li>prva</li>
+            <li>druga</li>
+            <li>treca</li>
+            <li>cetvrta</li>
+        </ul>
+   </nav>
+
+</body>
+</html>
