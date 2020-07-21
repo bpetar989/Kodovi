@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testic</title>
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+
+        th{
+            height:50px;
+        }
+
+        nav ul{
+            list-style: none;
+            overflow: hidden;
+            padding:0;
+        }
+
+        nav ul li{
+            float:left;
+        }
+
+        nav ul li a:hover{
+            background-color: orangered;
+        }
+
+        nav ul li a:visited{
+            color:black;
+        }
+
+        nav ul li a{
+            display:block;
+
+            height:50px;
+            text-decoration: none;
+            font-size: 20px;
+            margin-right:30px;
+            padding-top: 13px;
+            width:100px;
+            color: black;
+            text-align: center;
+        }
+
+        #orange{
+            color:orangered
+        }
+
+        #besplatno{
+            text-decoration: underline;
+        }
+
+        table{
+            width:50%;
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <ul>
+            <li><a href="pocetna.html"><b>Pocetna</b></a></li> 
+            <li><a href="onama.html"><b>O nama</b></a></li> 
+            <li><a href="prijava.html"><b>Prijava</b></a></li> 
+        </ul>
+    </nav>
+
+    <h1>Dobrodosli u ITBootcamp</h1>
+
+    <table>
+        <tr>
+            <th>Misija</th>
+            <th>Cilj</th>
+            <th>Vizija</th>
+        </tr>
+        <tr>
+            <td><img src="school.jpg" alt="" width="150px" height="150px"></td>
+            <td><img src="medal.jpg" alt="" width="150px" height="150px"></td>
+            <td><img src="lightbulb.jpg" alt="" width="150px" height="150px"></td>
+        </tr>
+        <tr>
+            <td>Naša misija je <span id="orange">otvaranje mogućnosti</span> za društveni napredak motivisanim pojedincima i povećanje produktivnosti srpske privrede kroz kvalifikovanu IT radnu snagu.</td>
+            <td>Škola pruža <span id="besplatno">besplatno znanje</span> populaciji koja nije imala priliku za formalno IT obrazovanje. Kursevi su fokusirani na praktičnu primenu da bi povećali plasman polaznika na radna mesta.</td>
+            <td>Škola pruža besplatno znanje populaciji koja nije imala priliku za formalno IT obrazovanje. Kursevi su fokusirani na praktičnu primenu da bi povećali plasman polaznika na radna mesta.</td>
+        </tr>
+    </table>
+    <h2>Nasi kursevi</h2>
+    <ol>
+        <li>Nis</li>
+            <ul>
+                <li id="qa">Testiranje softvera</li>
+                <li>razvoj web stranica</li>
+                <li>osnove programiranja</li>
+            </ul>
+        <li>Beograd</li>
+            <ul>
+                <li id="qa">Testiranje softvera</li>
+                <li>Programiranje</li>
+                
+            </ul>
+        
+    </ol>
+</body>
+</html>

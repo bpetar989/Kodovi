@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        
+        header{
+            background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fdemo.qodeinteractive.com%2Fcentral%2Fwp-content%2Fuploads%2F2013%2F05%2Fheader.jpg&f=1&nofb=1);
+            color:white;
+        }
+
+        header div{
+            text-align: center;
+            height:50px;
+            font-size: 80px;
+            overflow-y: scroll;
+            
+        }
+
+        *{
+            margin:0;
+            box-sizing: border-box;
+            padding:0;
+        }
+
+        ul{
+            list-style: none;
+            padding-left:0;
+        }
+    
+        ul li{
+            float:left;
+            border-right:1px solid black;
+            border-bottom:1px solid black;
+            border-top:1px solid black;
+            width:25%;
+            height:50px;
+            text-align: center;
+        }
+
+        ul li a{
+            display:block;
+            height:100%;
+            background-color: beige;
+            padding:15px;
+        }
+
+
+        ul li ul li {
+            display:none;
+            width:100%;
+            border-top:0;
+            border-left:1px solid black;
+        }
+
+        ul li:hover ul li {      /* DALEKO NAJBITNIJI DEO*/
+            display:block;
+        }        
+     
+        #border{
+            border-top:1px solid black;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <div><b>Juzne vesti</b></div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">jedan</a></li>
+            <li><a href="#">jedan</a></li>
+            <li><a href="#">jedan</a></li>
+            <li><a href="#">jedan</a>
+                <ul>
+                    <li id="border"><a href="#">dva</a></li>
+                    <li><a href="#">dva</a></li>
+                    <li><a href="#">dva</a></li>
+                    <li><a href="#">dva</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    
+</body>
+</html>

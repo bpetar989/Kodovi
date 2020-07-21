@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        
+
+        #gornji ul{
+            overflow: hidden;
+            list-style-type: none;
+            padding:0;
+            background-color: brown;
+        }
+
+        #gornji ul li{
+            float: left;
+            width:25%;
+            text-align: center;
+        }
+
+        #gornji ul li a{
+            color: white;
+            text-decoration: none;
+            padding:14px;
+            display:block;
+        }
+
+        #gornji ul li a:hover{
+            background-color: rgb(255, 166, 0);
+        }
+
+        .submenu{
+            position:absolute;/*<-----------vrlo bitno*/
+            background-color: rgb(255, 97, 40);
+            width:25%;
+            display:none;
+        }
+
+        .dropdown:hover .submenu {
+            display:block;
+        }
+
+        #donji{
+            position:fixed;
+            bottom:0;
+            width:100%;
+        }
+
+        #donji ul{
+            overflow:hidden;
+            list-style-type: none;
+        }
+
+        #donji ul li{
+
+            text-align: center;
+            width:25%;   
+        }
+
+        #donji ul li a{
+            color:white;
+            text-decoration: none;
+            padding:14px;
+            display:block;
+            background-color: cornflowerblue;
+        }
+
+        #donji ul li a:hover{
+            background-color: crimson;
+        }
+
+    </style>
+</head>
+<body>
+    <nav id="gornji">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Our Mission</a></li>
+            <li class="dropdown"><a href="#">Our Ingredients</a>
+                <div class="submenu">
+                    <a href="#">Pera Peric</a>
+                    <a href="#">Mika Mikic</a>
+                    <a href="#">Laza Lazic</a>
+                </div>
+            </li>
+            <li>
+                <a href="#">Our Customers</a>
+
+            </li>
+        </ul>
+    </nav>
+
+    <footer id="donji">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Our Mission</a></li>
+            <li><a href="#">Our Ingredients</a></li>
+            <li><a href="#">Our Customers</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

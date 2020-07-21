@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+
+        #polja{
+            width:100%;
+            box-sizing: border-box;
+            padding:5px;
+            margin:5px;
+        }
+
+        #button{
+            background-color: orange;
+            border:none;
+            height:40px;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html">Nazad na pocetnu</a>
+
+    <form action="" method="post">
+        <fieldset>
+            <legend>Informacije o kandidatu</legend>
+            <label for="" >Ime</label><br>
+            <input type="text" id="polja"><br>
+            <label for="" >Prezime</label><br>
+            <input type="text"  id="polja">
+        </fieldset>
+    </form>
+
+    <form action="" method="post">
+        <fieldset>
+            <legend>Informacije o kursu</legend>
+            <label for="" >Mesto</label>
+            <select name="Grad" id="polja">
+                <option value="Nis">Nis</option>
+                <option value="BG">Beograd</option>
+            </select>
+            <br><br>
+            <label for="">Kurs</label>
+            <input type="radio" value="JS" name="kurs"> Javascript
+            <input type="radio" value="QA" name="kurs"> Qa
+        </fieldset>
+    </form>
+    <form action="" method="POST">
+        <input type="checkbox" checked>
+        <label for="">Zelim da se prijavim na newsletter</label> <br>
+        <input type="button" value="Prijavi se" id="button" onclick="alert(`Prijava uspesna!`)">
+        
+    </form>
+
+</body>
+</html>

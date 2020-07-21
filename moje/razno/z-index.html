@@ -1,0 +1,47 @@
+<html>
+<head>
+<style>
+div.relative {
+  position:relative;
+  width: 400px;
+  left:10px;
+  height: 200px;
+  background-color: brown;  
+
+} 
+
+div.absolute {
+  position: relative;
+  top: 150px;
+  right:50px;
+  width: 200px;
+  height: 100px;
+  background-color: blue;
+ 
+}
+
+div.treci {
+  position: relative;
+  top: 20px;
+  right:-100px;
+  width: 200px;
+  height: 100px;
+  background-color: rgb(34, 177, 89);
+  z-index: -2;
+  
+}
+</style>
+</head>
+<body>
+
+<h2>position: absolute;</h2>
+
+<p>An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed):</p>
+
+<div class="relative">This div element has position: relative;
+  <div class="absolute">This div element has position: absolute;</div>
+  <div class="treci">This div element has position: absolute;</div>
+</div>
+
+</body>
+</html>
